@@ -1,5 +1,5 @@
 function Header() {
-    const Header: string = "Atlas Pro";
+    const Header: string = "Atlas UI";
 
     return <header>{Header}</header>;
 }
