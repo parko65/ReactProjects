@@ -54,9 +54,15 @@
   width: 100%;
   max-width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--bg);  
+  background-color: var(--bg);
   color: var(--text);
   height: 100vh;
+}
+
+/* FluentProvider renders a real <div>; making *it* the grid container keeps
+   header/nav/main/aside/footer as direct grid children. */
+.app-shell {
+  height: 100%;
 
   display: grid;
   grid-template-areas:

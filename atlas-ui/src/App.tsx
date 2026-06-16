@@ -1,17 +1,22 @@
 import Header from './components/Header'
 import MainContent from './components/MainContent'
+import NavMenu from './components/NavMenu'
+import {
+  FluentProvider,
+  webDarkTheme
+} from "@fluentui/react-components";
+
 import './App.css'
 
-function App() {  
-
+function App() {
   return (
-    <>
+    <FluentProvider theme={webDarkTheme} className="app-shell">
       <Header />
       <MainContent />
-      <nav>Nav</nav>
+      <NavMenu />
       <aside>Aside</aside>
       <footer>Footer</footer>
-    </>
+    </FluentProvider>
   )
 }
 

@@ -16,7 +16,9 @@ header {
 
 nav {
   grid-area: nav;
-  background-color: var(--social-bg);
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 main {
